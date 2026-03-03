@@ -3,21 +3,18 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://TwojaNazwaUzytkownika.github.io/NazwaRepozytorium",
+  "homepage": "https://TwojaNazwaUzytkownika.github.io/kwasy_karboksylowe",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "preview": "vite preview",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
-    "gh-pages": "^6.3.0",
     "react": "^19.2.0",
     "react-dom": "^19.2.0"
-  },
-  "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
   },
   "devDependencies": {
     "@eslint/js": "^9.39.1",
@@ -28,6 +25,7 @@
     "eslint-plugin-react-hooks": "^7.0.1",
     "eslint-plugin-react-refresh": "^0.4.24",
     "globals": "^16.5.0",
-    "vite": "^7.3.1"
+    "vite": "^7.3.1",
+    "gh-pages": "^5.0.0"
   }
 }
