@@ -1,0 +1,22 @@
+.grupaKarboksylowa,
+.resztaKwasowa {
+  transition: all 0.3s ease;
+  transform-origin: center;
+}
+
+
+.grupaKarboksylowa.active {
+  fill: #00ff88;
+}
+
+.grupaKarboksylowa.active line {
+  stroke: #00ff88;
+}
+
+.resztaKwasowa.active {
+  fill: #ffcc00;
+}
+
+.resztaKwasowa.active line {
+  stroke: #ffcc00;
+}

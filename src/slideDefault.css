@@ -1,0 +1,31 @@
+.slide {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  text-align: center;
+
+  background: radial-gradient(circle at 50% 50%, #5f7a8a 0%, #1c2a38 80%, #0e1620 100%);
+
+  color: #e6e6e6;
+  font-size: 3rem;
+
+  box-shadow: inset 0 0 120px rgba(0,0,0,0.25);
+}
+
+b{
+  text-shadow: 0 0 4px rgb(206, 235, 104);
+}
+
+.interactive {
+  transition: all 0.25s ease;
+  cursor: default;
+  scale: 1;
+}
+
+.interactive:hover {
+  color: white;
+  text-shadow: 0 0 8px rgb(43, 255, 0);
+  transform: translateY(-2px);
+  scale:1.1;
+  font-size: 3.3rem;
+}
