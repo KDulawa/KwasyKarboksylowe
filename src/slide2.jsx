@@ -10,16 +10,17 @@ export default function Slide2() {
     <section>
     <div>
       <h1>Czym są kwasy karboksylowe?</h1>
-      <div className="interactive">Kwasy karboksylowe - <b>jednofunkcyjne pochodne węglowodorów</b>, które zawierają grupę karboksylową o wzorze -COOH, która jest funkcyjna. </div>
+      <div className="interactive" style={{padding: "0 8vw"}}>Kwasy karboksylowe - <b>jednofunkcyjne pochodne węglowodorów</b>, które zawierają grupę karboksylową o wzorze &#8209;COOH, która jest funkcyjna. </div>
       <br/>
-      <div style={{ display: "flex", gap: "60px", marginLeft:"160px" }}>
-        <div style={{ display: "flex", flexDirection: "column" }}>
+      <h2>Ich wzór ogólny to:</h2>
+      <div style={{ display: "flex", gap: "60px", justifyContent: "center"}}>
+        <div style={{ display: "flex", flexDirection: "column", alignItems:"start" }}>
           <label
             className="interactive"
             onMouseEnter={() => setActivePart("R")}
             onMouseLeave={() => setActivePart(null)}
           >
-            R - reszta kwasowa
+            - reszta kwasowa
           </label>
 
           <label
@@ -27,7 +28,7 @@ export default function Slide2() {
             onMouseEnter={() => setActivePart("COOH")}
             onMouseLeave={() => setActivePart(null)}
           >
-            COOH - grupa karboksylowa
+            - grupa karboksylowa
           </label>
         </div>
 
@@ -54,18 +55,17 @@ export default function Slide2() {
               <text x="380" y="210">OH</text>
             </g>
 
+              <line x1="190" y1="140" x2="110" y2="180" stroke="black" strokeWidth="6" strokeLinecap="round"/>
             
             <g
               className={`resztaKwasowa ${
                 activePart === "R" ? "active" : ""
               }`}
-              fill="black"
+              fill="#fff434"
               fontSize="56"
               textAnchor="middle"
             >
-              <g stroke="black" strokeWidth="6" strokeLinecap="round">
-                <line x1="190" y1="140" x2="110" y2="180" />
-              </g>
+              
 
               <text x="80" y="210">R</text>
             </g>

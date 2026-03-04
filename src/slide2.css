@@ -7,16 +7,25 @@
 
 .grupaKarboksylowa.active {
   fill: #00ff88;
+  text-shadow: 0 0 15px rgb(4, 0, 255);
 }
 
 .grupaKarboksylowa.active line {
+  transition: all 0.3s ease;
   stroke: #00ff88;
 }
 
 .resztaKwasowa.active {
-  fill: #ffcc00;
+  fill: #00ff88;
+  text-shadow: 0 0 15px rgb(182, 231, 4);
 }
 
 .resztaKwasowa.active line {
-  stroke: #ffcc00;
+  transition: all 0.3s ease;
+  stroke: #00ff6a;
+}
+
+.resztaKwasowa.active circle {
+  transition: all 0.3s ease;
+  stroke: #00ff88;
 }

@@ -2,9 +2,12 @@ import {useEffect, useRef, useState } from "react";
 
 import Slide1 from "./slide1.jsx";
 import Slide2 from "./slide2.jsx";
+import Slide3 from "./slide3.jsx";
+import Slide4 from "./slide4.jsx";
+import LastSlide from "./lastslide.jsx";
 
 export default function Presentation() {
-  const slides = [Slide1, Slide2];
+  const slides = [Slide1, Slide2, Slide3, Slide4, LastSlide];
   const [index, setIndex] = useState(0);
   const containerRef = useRef(null);
 
@@ -16,21 +19,14 @@ export default function Presentation() {
     setIndex((i) => Math.max(i - 1, 0));
   };
 
-  useEffect(() => {
-    const container = containerRef.current;
-    container.scrollTo({
-      top: index * window.innerHeight,
-      behavior: "smooth",
-    });
-  }, [index]);
 
   useEffect(() => {
     const handleKey = (e) => {
-      if (e.code === "Space" || e.code === "ArrowDown" || e.key === "s" || e.key === "S") {
+      if (e.code === "ArrowDown" || e.key === "s" || e.key === "S") {
         e.preventDefault();
         nextSlide();
       }
-      if (e.code === "ArrowUp" || e.key === "Shift" || e.key === "w" || e.key === "W") {
+      if (e.code === "ArrowUp" || e.key === "w" || e.key === "W") {
         prevSlide();
       }
     };
@@ -41,7 +37,14 @@ export default function Presentation() {
 
 
   return (
-    <div ref={containerRef} className="presentation">
+    <div
+      ref={containerRef}
+      className="presentation"
+      style={{
+        transform: `translateY(-${index * 100}vh)`,
+        transition: "transform 0.6s ease"
+      }}
+    >
       {slides.map((Slide, i) => (
         <section
             key={i}
