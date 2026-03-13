@@ -5,10 +5,11 @@ import Slide2 from "./slide2.jsx";
 import Slide3 from "./slide3.jsx";
 import Slide4 from "./slide4.jsx";
 import Slide5 from "./slide5.jsx";
+import Slide6 from "./slide6.jsx";
 import LastSlide from "./lastslide.jsx";
 
 export default function Presentation() {
-  const slides = [Slide1, Slide2, Slide3, Slide4, Slide5, LastSlide];
+  const slides = [Slide1, Slide2, Slide3, Slide4, Slide5, Slide6, LastSlide];
   const [index, setIndex] = useState(0);
   const containerRef = useRef(null);
 
@@ -34,6 +35,33 @@ export default function Presentation() {
 
     window.addEventListener("keydown", handleKey);
     return () => window.removeEventListener("keydown", handleKey);
+  }, []);
+
+  const touchStartY = useRef(0);
+
+
+  useEffect(() => {
+    const handleTouchStart = (e) => {
+      touchStartY.current = e.touches[0].clientY;
+    };
+
+    const handleTouchEnd = (e) => {
+      const diff = touchStartY.current - e.changedTouches[0].clientY;
+
+      if (diff > 50) {
+        nextSlide();
+      } else if (diff < -50) {
+        prevSlide();
+      }
+    };
+
+    window.addEventListener("touchstart", handleTouchStart);
+    window.addEventListener("touchend", handleTouchEnd);
+
+    return () => {
+      window.removeEventListener("touchstart", handleTouchStart);
+      window.removeEventListener("touchend", handleTouchEnd);
+    };
   }, []);
 
 

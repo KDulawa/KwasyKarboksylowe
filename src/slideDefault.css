@@ -27,6 +27,27 @@ sub{
   scale: 1;
 }
 
+table{
+  width:"90vw",
+}
+
+table,th{
+  border: 0.4vh solid black;
+  border-collapse: collapse;
+}
+
+td,tr{
+  border: 0.3vh solid black;
+  border-collapse: collapse;
+  background-color: #4f8a8a;
+}
+
+th,td{
+  width:15vw;
+  height:8vh;
+  font-size: 1.5vw;
+}
+
 .interactive:hover {
   color: white;
   text-shadow: 0 0 0.5vw rgb(43, 255, 0);

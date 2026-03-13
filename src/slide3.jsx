@@ -15,7 +15,6 @@ export default function Slide3() {
         justifyContent:"space-between",
         flexWrap: "wrap",
         width: "90vw",
-        height:"100vh"
       }}>
         <div style={{
           display: "flex",
