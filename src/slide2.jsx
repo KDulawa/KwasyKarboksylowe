@@ -33,7 +33,7 @@ export default function Slide2() {
         </div>
 
         <div>
-          <svg width="460" height="400" viewBox="0 0 470 350">
+          <svg style={{width:"30vw"}} viewBox="0 0 470 350">
             
             
             <g

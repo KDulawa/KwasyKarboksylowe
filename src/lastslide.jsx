@@ -1,6 +1,6 @@
 import './slideDefault.css'
 
-export default function Slide3() {
+export default function Slide100() {
 
   return (
     <section>

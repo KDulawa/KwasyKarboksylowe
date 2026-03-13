@@ -2,7 +2,7 @@ import './slideDefault.css'
 import './slide2.css'
 import { useState } from 'react';
 
-export default function Slide2() {
+export default function Slide3() {
   const [activePart, setActivePart] = useState(null);
 
 
@@ -21,7 +21,7 @@ export default function Slide2() {
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
-          gap: "0.1rem"
+          gap: "0.1vw"
         }}>
           <h4>Alifatycznych</h4>
           <label
@@ -39,12 +39,11 @@ export default function Slide2() {
           >
             - grupa karboksylowa
           </label>
-          <label style={{fontSize:"1.5rem"}}>(jako przykład poniżej kwas octowy)</label>
+          <label style={{fontSize:"1.5vw"}}>(jako przykład poniżej kwas octowy)</label>
           <svg
             viewBox="0 0 470 350"
             style={{
-              width: "40vw",
-              maxWidth: "500px",
+              width: "20vw",
               height: "auto"
             }}
           >
@@ -83,14 +82,16 @@ export default function Slide2() {
               <text x="100" y="220" fontSize="30">3</text>
             </g>
           </svg>
-          
+          <h5 style={{width:"40vw"}}>
+            Wyjątkiem jest kwas mrówkowy, który nie posiada grupy alkilowej – zamiast niej występuje atom wodoru (H&#8209;COOH).
+          </h5>
         </div>
 
         <div style={{
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
-          gap: "0.1rem"
+          gap: "0.1vw"
         }}>
           <h4>Aromatycznych</h4>
           <label
@@ -107,12 +108,11 @@ export default function Slide2() {
           >
             - grupa karboksylowa
           </label>
-          <label style={{fontSize:"1.5rem"}}>(jako przykład poniżej kwas benzenokarboksylowy)</label>
+          <label style={{fontSize:"1.5vw"}}>(jako przykład poniżej kwas benzenokarboksylowy)</label>
             <svg
               viewBox="0 0 470 360"
               style={{
-                width: "40vw",
-                maxWidth: "400px",
+                width: "20vw",
                 height: "auto"
               }}
             >
@@ -161,6 +161,7 @@ export default function Slide2() {
                 </g>
               </g>
             </svg>
+            
         </div>
       </div>
     </div>
