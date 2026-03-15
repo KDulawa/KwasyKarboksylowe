@@ -5,6 +5,7 @@
   flex-direction: column;     /* zmiana */
   justify-content: center;    /* pion */
   align-items: center;        /* poziom */
+  align-content: center;
   padding: 5vh 5vw;
   box-sizing: border-box;
   text-align: center;
@@ -15,6 +16,10 @@
 
 b{
   text-shadow: 0 0 0.25vw rgb(206, 235, 104);
+}
+
+i{
+  text-shadow: 0 0 0.25vw rgb(255, 197, 5);
 }
 
 sub{
@@ -32,20 +37,28 @@ table{
 }
 
 table,th{
-  border: 0.4vh solid black;
+  border: 0.5vh solid black;
   border-collapse: collapse;
+  background-color: #407575;
+}
+
+td{
+  background-color: #4f8a8a;
 }
 
 td,tr{
   border: 0.3vh solid black;
   border-collapse: collapse;
-  background-color: #4f8a8a;
 }
 
 th,td{
   width:15vw;
-  height:8vh;
-  font-size: 1.5vw;
+  height:6vh;
+  font-size: 1.2vw;
+}
+
+th > sub, td > sub{
+  font-size: 1vw;
 }
 
 .interactive:hover {

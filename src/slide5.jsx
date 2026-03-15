@@ -1,25 +1,31 @@
 import './slideDefault.css'
 import './slide2.css'
 
-export default function Slide4() {
+export default function Slide5() {
 
 
   return (
     <section>
     <div>
       <div style={{ width:"100vw", height:"95vh",maxHeight:"100vw", alignContent:"center", justifyItems:"center"}}>
-        <h1>Nazwy zwyczajowe kwasów</h1>
+        <h3>Szereg homologiczny alifatycznych nasyconych kwasów monokarboksylowych</h3>
         <table >
         <thead>
             <tr>
                 <th rowSpan={2}>Liczba atomów węgla w cząsteczce</th>
                 <th colSpan={2}>Nazwa</th>
-                <th colSpan={3}>Wzór</th>
+                <th colSpan={3}>
+                  Wzór
+                  <br/>
+                  (C<sub>n</sub>H<sub>2n+1</sub>COOH)
+                </th>
             </tr>
             <tr>
                 <th>systematyczna</th>
                 <th>zwyczajowa</th>
-                <th>sumaryczny</th>
+                <th>
+                  sumaryczny
+                </th>
                 <th  style={{width:"25vw"}}>półstrukturalny</th>
             </tr>
         </thead>

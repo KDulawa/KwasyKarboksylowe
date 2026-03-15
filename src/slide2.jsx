@@ -20,7 +20,7 @@ export default function Slide2() {
             onMouseEnter={() => setActivePart("R")}
             onMouseLeave={() => setActivePart(null)}
           >
-            - reszta kwasowa
+            - atom wodoru / grupa alkilowa / grupa arylowa
           </label>
 
           <label

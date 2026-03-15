@@ -8,7 +8,7 @@ export default function Slide3() {
 
   return (
     <section>
-    <div style={{height:"100vh"}}>
+    <div style={{height:"100vh", alignContent:"center"}}>
       <h3>Budowa cząsteczek kwasów karboksylowych</h3>
       <div style={{ 
         display: "flex", 
@@ -20,7 +20,9 @@ export default function Slide3() {
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
-          gap: "0.1vw"
+          gap: "0.1vw",
+          width:"40vw",
+          height:"90vh"
         }}>
           <h4>Alifatycznych</h4>
           <label
@@ -90,7 +92,9 @@ export default function Slide3() {
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
-          gap: "0.1vw"
+          gap: "0.1vw",
+          width:"40vw",
+          height:"90vh"
         }}>
           <h4>Aromatycznych</h4>
           <label

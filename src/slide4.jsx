@@ -23,9 +23,9 @@ export default function Slide4() {
     <div>
       <div style={{ width:"100vw", height:"95vh",maxHeight:"100vw", alignContent:"center", justifyItems:"center"}}>
         <h1>Nazewnictwo kwasów karboksylowych</h1>
-        <h2>"kwas " + alkan + "-owy"</h2>
+        <h2>"kwas " + <i>nazwa alkanu</i> + "-owy"</h2>
         <input type="number" value={atomyWegla} onChange={(e) => setAtomyWegla(Number(e.target.value))} style={{width:"20vw", fontSize:"2vw", fontWeight:"bold", backgroundColor:"#8383b3", border:"1vh solid #a3a3f3", textAlign:"center"}}/>
-        <h2>{Number.isInteger(atomyWegla) && atomyWegla > 0 && atomyWegla <= 100 ? ("Kwas " + Weglowodory[(atomyWegla-1)%100] + "owy") : "Podaj liczbę węgli (>0 <=100)"}</h2>
+        <h2>{Number.isInteger(atomyWegla) && atomyWegla > 0 && atomyWegla <= 100 ? (<>Kwas <i>{Weglowodory[(atomyWegla-1)]}</i>owy</>) : "Podaj liczbę węgli (>0 <=100)"}</h2>
       </div>
       
       
