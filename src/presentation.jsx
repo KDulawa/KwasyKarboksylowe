@@ -11,7 +11,7 @@ import Slide8 from "./slide8.jsx";
 import Slide9 from "./slide9.jsx";
 import Slide10 from "./slide10.jsx";
 import Slide11 from "./slide11.jsx";
-import Slide12 from "./slide11.jsx";
+import Slide12 from "./slide12.jsx";
 import LastSlide from "./lastslide.jsx";
 
 export default function Presentation() {
