@@ -28,7 +28,7 @@ export default function Slide6() {
           <label style={{fontSize:"1.5vw"}}>wzór sumaryczny: C<sub>4</sub>H<sub>8</sub>O<sub>2</sub></label>
 
           <svg
-              viewBox="0 -50 600 700"
+              viewBox="0 -50 720 700"
               style={{
                 width: "20vw",
                 height: "auto"
