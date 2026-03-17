@@ -11,10 +11,11 @@ import Slide8 from "./slide8.jsx";
 import Slide9 from "./slide9.jsx";
 import Slide10 from "./slide10.jsx";
 import Slide11 from "./slide11.jsx";
+import Slide12 from "./slide11.jsx";
 import LastSlide from "./lastslide.jsx";
 
 export default function Presentation() {
-  const slides = [Slide1, Slide2, Slide3, Slide4, Slide5, Slide6, Slide7, Slide8, Slide9, Slide10, Slide11, LastSlide];
+  const slides = [Slide1, Slide2, Slide3, Slide4, Slide5, Slide6, Slide7, Slide8, Slide9, Slide10, Slide11, Slide12, LastSlide];
   const [index, setIndex] = useState(0);
   const containerRef = useRef(null);
 
